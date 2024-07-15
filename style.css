@@ -1,0 +1,330 @@
+/*__________________________General CSS for page_______________________________*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rockwell', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:	#1a001a;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*______________________________HOME PAGE_______________________*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/background.gif);
+    background-size: cover;
+    background-position: center;  
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+
+.logo{
+    width: 150px;
+    height: 140px;
+    margin-left: -100px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none; 
+    margin:10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+}
+
+.header-text{
+    margin-top: 20%;
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+.header-text p{
+    color: yellow;
+}
+
+.header-text h1{
+    margin-left: 100px;
+    color: white;
+}
+
+.header-text h1 .red{
+    color:red;
+}
+.header-text h1 .yellow{
+    color:yellow;
+}
+.header-text h1 .orange{
+    color:darkorange;
+}
+.header-text h1 .purple{
+    color:violet;
+}
+
+/*___________________ABOUT SECTION_________________________*/
+#about{
+    padding: 20px 0;
+    color: yellow;
+    margin-top: 200px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.about-col-2 p{
+    color: yellow;
+    margin-top: 10px;
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+/*_________________________Core Committee Members____________________________-*/
+.members{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.President, .Convener, .Outreach, .Treasurer, .FIC {
+    background-size: cover;
+    background-position: center; 
+    height: 300px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    transition: box-shadow 0.5s ; 
+}
+
+.President{background-image: url(/Images/president.jpg);}
+.Convener{background-image: url(/Images/convener.jpg);}
+.Outreach{background-image: url(/Images/outreach.jpg);}
+.Treasurer{background-image: url(/Images/treasurer.jpg);}
+.FIC{background-image: url(/Images/fic.jpg);}
+
+.President p{margin-bottom: -200px;color: white;}
+.Convener p{margin-bottom: -200px;color: white;}
+.Outreach p{margin-bottom: -200px;color: white;}
+.Treasurer p{margin-bottom: -165px; text-align:center;color: white;}
+.FIC p{margin-bottom: -200px;color: white;}
+
+.FIC {
+    grid-column: span 4; /* Make the FIC section span two columns */
+    margin: auto; /* Center the FIC section horizontally */
+    width: 20%;
+}
+
+.President:hover, .Convener:hover, .Outreach:hover, .Treasurer:hover, .FIC:hover {
+    box-shadow: 0 0 40px 10px rgba(186, 98, 194, 0.8); /* Adjusted box-shadow properties */
+}
+/*____________________________Events_______________________________________________*/
+#event{
+    padding: 50px 0;
+}
+
+.event-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.event-info{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.event-info img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s; 
+}
+
+.event-info:hover img{
+    transform: scale(1.1); 
+}
+
+.motion{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #831097);
+    border-radius: 10px; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.event-info:hover .motion{
+    height: 94%;
+}
+
+.layer h3{
+    font-weight: 50000;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: color 0.5s;
+    transition: font-size 0.5s;
+}
+
+.event-info:hover h3{
+    color:red;
+    font-size: 25px;
+}
+
+
+.layer p{
+    font-weight: 3000;
+    color: yellow;
+    font-size: 20px;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #bd08bd;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+
+}
+
+.btn:hover{
+    background: #bd08bd;
+}
+
+/*_____________________CONTACT US__________________________________*/
+.contact-left{
+    flex-basis: 35% ;
+}
+
+.contact-right{
+    flex-basis: 60% ;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    color: purple;
+}
+
+.contact-left p i{
+    color: violet;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display:inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #d619c6;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background-color :#1a001a;
+    transition: background-color 5s,
+}
+
+.btn.btn2:hover{   
+    background-color :#d619c6;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px ;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+.copyright{
+    width: 100%;
+    text-align:center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: white;
+}

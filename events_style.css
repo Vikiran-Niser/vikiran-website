@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Rockwell', sans-serif;
@@ -6,50 +6,48 @@
     color: white;
 }
 
-body{
-    background-color:	#1a001a;
+body {
+    background-color: #1a001a;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-/*For the HOME PAGE*/
-
-#header{
+/* For the HOME PAGE */
+#header {
     width: 100%;
     height: 100vh;
-    background-image: url(/Images/event_backgrd.gif);
+    background-image: url(Images/event_backgrd.gif);
     background-size: cover;
     background-position: center;  
 }
-.container{
+
+.container {
     padding: 10px 10%;
 }
 
-.logo{
+.logo {
     width: 150px;
     height: 140px;
     margin-left: -100px;
 }
 
-.vikiran_logo{
+.vikiran_logo {
     width: 200px;
     height: 200px;
     margin-left: 1000px;
-    position:absolute;
+    position: absolute;
 }
 
-.header-text{
+.header-text {
     margin-top: 10%;
-    margin-left: 600px;
-    text-align: center;
+    text-align: center; /* Center align the text */
 }
 
-.header-text p{
+.header-text p {
     color: yellow;
     margin-top: 50px;
-    margin-left: 90px;
     font-size: 50px;
 }
 
@@ -63,23 +61,23 @@ html{
     text-overflow: ellipsis; /* Add ellipsis to indicate overflow */
 }
 
-/* ________________________TALKS__________________________________*/
-
-.talks-header h1{
+/* TALKS */
+.talks-header h1 {
     color: red;
     margin-top: 50px;
-    margin-left: 90px;
     font-size: 50px;
     font-family: 'Roboto Mono';
 } 
 
-.talks-header img{
+.talks-header img {
     border-radius: 50px;
     margin-left: 40px;
     margin-top: 35px;
+    width: 400px; /* Set a fixed width for consistency */
+    height: 400px; /* Set a fixed height for consistency */
 }
 
-.talks-header p{
+.talks-header p {
     color: yellow;
     margin-left: 480px;
     margin-right: 70px;
@@ -125,64 +123,65 @@ html{
     color: #009879;
 }
 
-/*_________________________PRERNA________________________*/
-.prerna h1{
+/* PRERNA */
+.prerna h1 {
     color: red;
     margin-top: 50px;
-    margin-left: 90px;
     font-size: 50px;
     font-family: 'Roboto Mono';
 }
 
-.prerna img{
-    margin-left: 40px;
-    margin-top: -5000000000px;
-    margin-bottom: 100px;
+.prerna img {
+    margin-left: 10px;
     border-radius: 20px;
+    width: 400px; /* Set a fixed width for consistency */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -1900px;
 }
 
-.prerna p{
+.prerna p {
     color: yellow;
     margin-left: 480px;
     margin-right: 70px;
-    margin-top: 0px;
     font-size: 20px;
 }
 
-
-/*_________________________SCIENTIA________________________*/
-.scientia h1{
+/* SCIENTIA */
+.scientia h1 {
     color: red;
     margin-top: 50px;
-    margin-left: 90px;
     font-size: 50px;
     font-family: 'Roboto Mono';
 }
 
-.scientia img{
-    margin-left: 40px;
-    margin-top: -550px;
+.scientia img {
+    margin-left: 10px;
+    width: 400px; /* Set a fixed width for consistency */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -480px; /* Adjust as needed */
 }
 
-.scientia p{
+.scientia p {
     color: yellow;
     margin-left: 480px;
     margin-right: 70px;
-    margin-top: 0px;
     font-size: 20px;
 }
 
-.scientia_winners h1{
+.scientia_winners h1 {
+    margin-left: 500px;
+    margin-top: -100px;
     font-size: 50px;
 }
 
-.scientia_winners li{
+.scientia_winners li {
+    margin-left: 500px;
+    margin-top: 00px;
     font-size: 20px;
     color: rgb(255, 132, 0);
 }
 
-/*________________________MEME MAKING_____________________________________________________*/
-
+/* MEME MAKING */
 .meme-make-content h1 {
     color: red;
     margin-top: 50px;
@@ -205,6 +204,15 @@ html{
     justify-content: center; /* Center the images horizontally */
     gap: 20px; /* Add some space between images */
     margin-top: 20px;
+}
+
+.meme-item {
+    text-align: center; /* Center-align items */
+}
+
+.meme-item img {
+    width: 280px; /* Set a fixed width for consistency */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #meme-making p {
